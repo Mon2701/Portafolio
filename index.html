@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="PWA JS.">
+    <link rel="manifest" href="manifest.json">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/icono.png" /> 
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="black"> 
+
+
+  <title>Portafolio</title>
+</head>
+<body>
+<!--carga de pagina-->
+    <div class="page-loader">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+<!--carga de pagina-->
+
+
+<div class="overlay"></div>
+
+    
+    <div class="main hidden">
+
+                  <!--Inicio Menu-->
+                  <div class="header">
+                    <div class="container">
+                        <div class="row  flex-end">
+                          <button type="button" class="nav-toggler">
+                            <span></span>
+                          </button>  
+                          <nav class="nav ">
+                            <div class="nav-inner">
+                                <ul>
+                                    <li><a href="#inicio" class="nav-item link-item">Inicio</a></li>
+                                    <li><a href="#sobremi" class="nav-item link-item">Sobre mi</a></li>
+                                    <li><a href="#portafolio" class="nav-item link-item">Portafolio</a></li>
+                                    <li><a href="#contacto" class="nav-item link-item">Contacto</a></li>
+                                </ul>   
+                            </div>
+                          </nav>
+                        </div>
+                    </div>
+                </div>
+            <!--Fin Menu-->
+        <section class="home-section aling-items-center" id="inicio">
+                  <!--Inicia la seccion del inico-->
+            <div class="container ">
+                <div class="row aling-items-center">
+                    <div class="home-text">
+                        <p>Hola mi nombre es</p>
+                        <h1>Atciry Monserrat</h1>
+                        <h2>Estudiante en ING. Desarrollo y gestión de software</h2>
+                        <a href="#sobremi" class="btn link-item">Sobre mi  <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-balloon-heart" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="m8 2.42-.717-.737c-1.13-1.161-3.243-.777-4.01.72-.35.685-.451 1.707.236 3.062C4.16 6.753 5.52 8.32 8 10.042c2.479-1.723 3.839-3.29 4.491-4.577.687-1.355.587-2.377.236-3.061-.767-1.498-2.88-1.882-4.01-.721L8 2.42Zm-.49 8.5c-10.78-7.44-3-13.155.359-10.063.045.041.089.084.132.129.043-.045.087-.088.132-.129 3.36-3.092 11.137 2.624.357 10.063l.235.468a.25.25 0 1 1-.448.224l-.008-.017c.008.11.02.202.037.29.054.27.161.488.419 1.003.288.578.235 1.15.076 1.629-.157.469-.422.867-.588 1.115l-.004.007a.25.25 0 1 1-.416-.278c.168-.252.4-.6.533-1.003.133-.396.163-.824-.049-1.246l-.013-.028c-.24-.48-.38-.758-.448-1.102a3.177 3.177 0 0 1-.052-.45l-.04.08a.25.25 0 1 1-.447-.224l.235-.468ZM6.013 2.06c-.649-.18-1.483.083-1.85.798-.131.258-.245.689-.08 1.335.063.244.414.198.487-.043.21-.697.627-1.447 1.359-1.692.217-.073.304-.337.084-.398Z"/>
+                          </svg></i></a>
+                        <a href="#portafolio" class="btn link-item">Portafolio   <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+                            <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"/>
+                          </svg></i></a>
+                    </div>
+                    <div class="home-img">
+                        <div class="img-box">
+                            <img src="img/1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+  <!--termina la seccion del inico-->
+
+  <!--seccion de sobre mi-->
+    <section class="about-section sec-padding" id="sobremi">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2>Sobre mi</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="about-img">
+                    <div class="img-box">
+                        <img src="img/2.png" alt="about img">
+                    </div>
+                    <a href="cv.pdf" target="_blank" class="btn">Descargar CV <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                      </svg></i></a>
+                    <a href="#contacto" class="btn link-item">Contacto <i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-square-heart" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12ZM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2Z"/>
+                        <path d="M8 3.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+                      </svg></i></a>
+                </div>
+                <div class="about-text">
+                    <p>Soy una apasionada de la tecnología desde una edad temprana. Mi fascinación por la computación, los videojuegos y
+                         la innovación tecnológica ha sido un motor constante en mi vida. Mi nombre es Atciry Monserrat Macias Andrade y
+                          me encanta explorar y entender cómo funciona la tecnología, así como su mantenimiento y desarrollo. </p>
+                    <div class="about-tabs">
+                        <button type="button" class="tab-item active" data-target="#educacion">Educación</button>
+                        <button type="button" class="tab-item" data-target="#experiencia">Experiencia</button>
+                        <button type="button" class="tab-item" data-target="#habilidades">Habilidades</button>
+
+                    </div>
+                    <!--educacion-->
+                    <div class="tab-content active" id="educacion">
+                        <div class="tarjeta">
+                            <div class="contenido">
+                                <span class="date">2019-2021</span>
+                                <h4>UTNA - <span>Universidad</span></h4>
+                                <p>Técnico Universitario en Tecnologias de la información area desarrollo de software multiplataforma</p>                            </div>
+                          </div>
+                          <div class="tarjeta">
+                            <div class="contenido">
+                                <span class="date">2022-2023</span>
+                                <h4>UTNA - <span>Universidad</span></h4>
+                                <p>Estudiante en ING. Desarrollo y gestión de software multiplataforma</p>                            </div>
+                          </div>
+                    </div>
+                    <!--final-->
+                    <!--experiencia-->
+                    <div class="tab-content" id="experiencia">
+                       <div class="tarjeta-exp">
+                        <span class="date">2019-2022</span>
+                        <h4>Apoyo Técnico - <span>En INEPGA</span></h4>
+                        <p>Responsable de la organización de las actividades al interior de la
+                            Plaza comunitaria en términos de integrar la tecnología para el 
+                            proceso de aprendizaje.</p><br>
+                            <h4><span>Actividades que desarrollaba:</span></h4><br>
+                            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-angle" viewBox="0 0 16 16">
+                                <path d="M9.828.722a.5.5 0 0 1 .354.146l4.95 4.95a.5.5 0 0 1 0 .707c-.48.48-1.072.588-1.503.588-.177 0-.335-.018-.46-.039l-3.134 3.134a5.927 5.927 0 0 1 .16 1.013c.046.702-.032 1.687-.72 2.375a.5.5 0 0 1-.707 0l-2.829-2.828-3.182 3.182c-.195.195-1.219.902-1.414.707-.195-.195.512-1.22.707-1.414l3.182-3.182-2.828-2.829a.5.5 0 0 1 0-.707c.688-.688 1.673-.767 2.375-.72a5.922 5.922 0 0 1 1.013.16l3.134-3.133a2.772 2.772 0 0 1-.04-.461c0-.43.108-1.022.589-1.503a.5.5 0 0 1 .353-.146zm.122 2.112v-.002zm0-.002v.002a.5.5 0 0 1-.122.51L6.293 6.878a.5.5 0 0 1-.511.12H5.78l-.014-.004a4.507 4.507 0 0 0-.288-.076 4.922 4.922 0 0 0-.765-.116c-.422-.028-.836.008-1.175.15l5.51 5.509c.141-.34.177-.753.149-1.175a4.924 4.924 0 0 0-.192-1.054l-.004-.013v-.001a.5.5 0 0 1 .12-.512l3.536-3.535a.5.5 0 0 1 .532-.115l.096.022c.087.017.208.034.344.034.114 0 .23-.011.343-.04L9.927 2.028c-.029.113-.04.23-.04.343a1.779 1.779 0 0 0 .062.46z"/>
+                              </svg>  Mantener en funcionamiento los equipos</p><br>
+                            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-angle" viewBox="0 0 16 16">
+                                <path d="M9.828.722a.5.5 0 0 1 .354.146l4.95 4.95a.5.5 0 0 1 0 .707c-.48.48-1.072.588-1.503.588-.177 0-.335-.018-.46-.039l-3.134 3.134a5.927 5.927 0 0 1 .16 1.013c.046.702-.032 1.687-.72 2.375a.5.5 0 0 1-.707 0l-2.829-2.828-3.182 3.182c-.195.195-1.219.902-1.414.707-.195-.195.512-1.22.707-1.414l3.182-3.182-2.828-2.829a.5.5 0 0 1 0-.707c.688-.688 1.673-.767 2.375-.72a5.922 5.922 0 0 1 1.013.16l3.134-3.133a2.772 2.772 0 0 1-.04-.461c0-.43.108-1.022.589-1.503a.5.5 0 0 1 .353-.146zm.122 2.112v-.002zm0-.002v.002a.5.5 0 0 1-.122.51L6.293 6.878a.5.5 0 0 1-.511.12H5.78l-.014-.004a4.507 4.507 0 0 0-.288-.076 4.922 4.922 0 0 0-.765-.116c-.422-.028-.836.008-1.175.15l5.51 5.509c.141-.34.177-.753.149-1.175a4.924 4.924 0 0 0-.192-1.054l-.004-.013v-.001a.5.5 0 0 1 .12-.512l3.536-3.535a.5.5 0 0 1 .532-.115l.096.022c.087.017.208.034.344.034.114 0 .23-.011.343-.04L9.927 2.028c-.029.113-.04.23-.04.343a1.779 1.779 0 0 0 .062.46z"/>
+                              </svg> Coordinar los servicios y procedimientos de acceso, uso, registro,
+                                aprendizaje, acreditación y certificación que ofrece la Plaza.</p><br>
+                            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-angle" viewBox="0 0 16 16">
+                                <path d="M9.828.722a.5.5 0 0 1 .354.146l4.95 4.95a.5.5 0 0 1 0 .707c-.48.48-1.072.588-1.503.588-.177 0-.335-.018-.46-.039l-3.134 3.134a5.927 5.927 0 0 1 .16 1.013c.046.702-.032 1.687-.72 2.375a.5.5 0 0 1-.707 0l-2.829-2.828-3.182 3.182c-.195.195-1.219.902-1.414.707-.195-.195.512-1.22.707-1.414l3.182-3.182-2.828-2.829a.5.5 0 0 1 0-.707c.688-.688 1.673-.767 2.375-.72a5.922 5.922 0 0 1 1.013.16l3.134-3.133a2.772 2.772 0 0 1-.04-.461c0-.43.108-1.022.589-1.503a.5.5 0 0 1 .353-.146zm.122 2.112v-.002zm0-.002v.002a.5.5 0 0 1-.122.51L6.293 6.878a.5.5 0 0 1-.511.12H5.78l-.014-.004a4.507 4.507 0 0 0-.288-.076 4.922 4.922 0 0 0-.765-.116c-.422-.028-.836.008-1.175.15l5.51 5.509c.141-.34.177-.753.149-1.175a4.924 4.924 0 0 0-.192-1.054l-.004-.013v-.001a.5.5 0 0 1 .12-.512l3.536-3.535a.5.5 0 0 1 .532-.115l.096.022c.087.017.208.034.344.034.114 0 .23-.011.343-.04L9.927 2.028c-.029.113-.04.23-.04.343a1.779 1.779 0 0 0 .062.46z"/>
+                              </svg> Brindar posibilidades de exploración, manipulación y experimentación de 
+                                todos los equipos de la Plaza a las personas jóvenes y adultas, a los
+                                asesores internos y externos y al personal institucional, de manera ordenada,
+                                 pero flexible.</p>
+                       </div>
+                    </div>
+                    <!--final-->
+
+                    <!--habilidades-->
+                    <div class="tab-content" id="habilidades">
+                        
+                        <div class="Technical-item-hab">
+                            <div class="tarjeta-hab">
+                              <div class="bar">
+                                <div class="info">
+                                    <span>HTML y CSS</span>
+                                </div><br>
+                                <div class="progress-line HTMLYCSS">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tarjeta-hab">
+                            <div class="bar">
+                                <div class="info">
+                                    <span>CSS</span>
+                                </div><br>
+                                <div class="progress-line BD">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tarjeta-hab">
+                            <div class="bar">
+                                <div class="info">
+                                    <span>JavaScript</span>
+                                </div><br>
+                                <div class="progress-line JavaScript">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tarjeta-hab">
+                            <div class="bar">
+                                <div class="info">
+                                    <span>C++</span>
+                                </div><br>
+                                <div class="progress-line C">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tarjeta-hab">
+                            <div class="bar">
+                                <div class="info">
+                                    <span>C#</span>
+                                </div><br>
+                                <div class="progress-line c">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div> 
+
+                        </div>
+                    </div>
+                </div>
+                <!--final-->       
+                </div>
+            </div>
+    </section>
+    <!--cierra sobre mi-->
+
+        <!--inicia la seccion del portafolio-->
+        <section class="portfolio-section sec-padding " id="portafolio">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h2>Portafolio</h2>
+                    </div>
+                </div>
+                <div class="row">
+                                <!--inicio-->
+                                <div class="portfolio-item">
+                                    <div class="portfolio-item-thumbnail">
+                                        <img src="img/portafolio/GAIA.png" alt="portfolio item thumb">
+                                    </div>
+                                    <h3 class="portfolio-item-title">GAIA</h3>
+                                    <button type="button" class="btn view-project-btn">ver proyecto</button>
+                                    <div class="portfolio-item-details">
+                                        <div class="description">
+                                            <p>Este proyecto desarrolló una página web interactiva que opera como una aplicación cliente-servidor.
+                                                 Se empleó PHP como lenguaje de servidor, y HTML, CSS y Bootstrap para la interfaz de usuario y 
+                                                 la presentación del contenido. La página web se conecta directamente a una base de datos, 
+                                                 posibilitando que los usuarios interactúen con la información almacenada.</p>
+                                        </div>
+                                        <div class="general-info">
+                                            <ul>
+                                                <li>Creada - <span> 22 Septiembre 2022</span></li>
+                                                <li>Tecnologias usadas - <span>html, CSS, Boostrap y PHP</span></li>
+                                                <li>Roles - <span>Frontend</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--fin-->
+                                <!--inicio-->
+                                <div class="portfolio-item">
+                                    <div class="portfolio-item-thumbnail">
+                                        <img src="img/portafolio/lancha.png" alt="portfolio item thumb">
+                                    </div>
+                                    <h3 class="portfolio-item-title">Mini barco</h3>
+                                    <button type="button" class="btn view-project-btn">Ver proyecto</button>
+                                    <div class="portfolio-item-details">
+                                        <div class="description">
+                                            <p>Junto con compañeros de la universidad construimos una pequeña embarcación controlada por un microcontrolador Arduino.
+                                                 Utilizando motores, sensores y una placa Arduino programada para controlar la dirección, la velocidad y otras 
+                                                funciones, en donde aprendimos un poco de electrónica y programación.</p>
+                                        </div>
+                                        <div class="general-info">
+                                            <ul>
+                                                <li>Creada - <span>10 Marzo 2022</span></li>
+                                                <li>Tecnologias usadas - <span>Arduino</span></li>
+                                                <li>Roles - <span>Programación y armar circuito</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--fin-->
+                                                <!--inicio-->
+                    <div class="portfolio-item">
+                        <div class="portfolio-item-thumbnail">
+                            <img src="img/portafolio/pollitopio.png" alt="portfolio item thumb">
+                        </div>
+                        <h3 class="portfolio-item-title">Pollito Pio</h3>
+                        <button type="button" class="btn view-project-btn">Ver proyecto </button>
+                        <div class="portfolio-item-details">
+                            <div class="description">
+                                <p>Junto con compañeros de la univerdad desarrollamos una página web que cuenta con un sistema de logs para permitir el
+                                     monitoreo y la auditoría de las actividades en un sistema o aplicación y la verificación de campos  
+                                    calidad de los datos y con implemmentación de SQL injection para reducir el riesgo de errores y asegurar la confiabilidad.</p>
+                            </div>
+                            <div class="general-info">
+                                <ul>
+                                    <li>Creado en - <span> 11 Agosto 2022</span></li>
+                                    <li>Tecnologias usadas - <span>html, CSS, Boostrap, MySQL, JavaScript</span></li>
+                                    <li>Roles - <span>Frontend</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin-->
+
+                                                 <!--inicio-->
+                                                 <div class="portfolio-item">
+                                                    <div class="portfolio-item-thumbnail">
+                                                        <img src="img/portafolio/condominio.jpg" alt="portfolio item thumb">
+                                                    </div>
+                                                    <h3 class="portfolio-item-title">Condominio</h3>
+                                                    <button type="button" class="btn view-project-btn">Ver proyecto </button>
+                                                    <div class="portfolio-item-details">
+                                                        <div class="description">
+                                                            <p>Junto con un compañero de la universidad desarrollamos una pagina web para la venta de preservativos en donde
+                                                                nos enfocamos en hacer un carrito de compras del producto.
+                                                            </p>
+                                                        </div>
+                                                        <div class="general-info">
+                                                            <ul>
+                                                                <li>Creado en - <span>27 Noviembre 2023</span></li>
+                                                                <li>Tecnologias usadas - <span>html, CSS, Boostrap, JavaScript</span></li>
+                                                                <li>Roles - <span>Frontend y diseñador</span></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--fin-->                   
+                            
+                </div>
+            </div>
+            </section>
+        <!-- termina seccion del portf -->
+
+         <!-- sección del contacto -->
+        <section class="contact-section sec-padding" id="contacto">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title">
+                        <h2>Contacto</h2>
+                        <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="contact-info">
+                        <div class="contact-info-item">
+                            <h3>Correo</h3>
+                            <p>matciry@gmail.com</p>
+                        </div>
+                        <div class="contact-info-item">
+                            <h3>Teléfono</h3>
+                            <p>(+52) 449 438 6455</p>
+                        </div>
+                        <div class="contact-info-item">
+                            <h3>Redes sociales</h3>
+                            <div class="social-links">
+                                <a href="https://github.com/Mon2701" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                  </svg></a>
+                                <a href="https://www.linkedin.com/in/atciry-monserrat-macias-andrade-922071290/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                                  </svg></a>       
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="form">
+                            <div class="row">
+                                <div class="input-group">
+                                    <input type="text" placeholder="Nombre" name="from_name" id="from_name" class="input-control" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="email" placeholder="Correo" name="email_id" id="email_id" class="input-control" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="text" placeholder="Asunto"  name="asunto" id="asunto" class="input-control" required>
+                                </div>
+                                <div class="input-group">
+                                    <textarea placeholder="Mensaje" class="input-control" name="message" id="message" required></textarea>
+                                </div>
+                                <div class="submit-btn">
+                                    <button type="submit" id="button" value="Send Email" class="btn">Enviar </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+        </section>
+        <!-- se termina la sección del contacto -->
+
+    </div><!--se cierra el main-->
+    
+    <div class="portfolio-popup">
+        <div class="pp-inner">
+            <div class="pp-content">
+                <div class="pp-header">
+                    <button type="button" class="btn pp-close"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                      </svg></button>
+                    <div class="pp-thumbnail">
+                        <img src="" alt="pp-thumbnail">
+                    </div>
+                    <h3></h3>
+                </div>
+                <div class="pp-body"></div>
+            </div>
+        </div>
+    </div>
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+<script src="js/app.js"></script>
+<script src="js/msj.js"></script>
+
+<script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">emailjs.init('DmkGhWL-sCrFDC4tm')</script>
+
+</body>
+</html>
